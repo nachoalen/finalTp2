@@ -13,7 +13,7 @@ class Sonda {
     };
 
     getById = async (id) => {
-        return this.sondas[id - 1];
+        return this.sondas.find((obj) => obj.id === id);
     };
 }
 
