@@ -13,6 +13,9 @@ class Sonda {
     };
 
     getById = async (id) => {
+        if(id < 1 || id > 5){
+            throw error
+        }
         return this.sondas.find((obj) => obj.id === id);
     };
 }
